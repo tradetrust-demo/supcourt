@@ -1,0 +1,61 @@
+{
+  "name": "oa-doc",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "lodash": "^4.17.15",
+    "penpal": "^4.1.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.8.6",
+    "react-pdf": "^4.1.0",
+    "react-scripts": "3.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "test-coverage": "npm run test -- --coverage --watchAll=false",
+    "integration": "testcafe chrome src/**/*.spec.js",
+    "integration:headless": "testcafe chrome:headless src/**/*.spec.js",
+    "eject": "react-scripts eject",
+    "lint": "eslint . --ext .js --max-warnings 0",
+    "lint:fix": "eslint . --ext .js --fix",
+    "deploy-gh": "npm run build && gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-plugin-dynamic-import-webpack": "^1.1.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-jest": "^22.17.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "gh-pages": "^2.1.1",
+    "node-sass": "^4.12.0",
+    "prettier": "^1.18.2",
+    "react-test-renderer": "^16.9.0",
+    "sinon": "^7.4.2",
+    "testcafe": "^1.4.3"
+  }
+}
